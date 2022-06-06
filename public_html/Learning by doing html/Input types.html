@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Input types.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" type="text/css" rel="stylesheet">
+        
+    </head>
+    
+    <body class="Body_background">
+
+        <ul class="Menueband">
+                    
+        <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+        <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+        <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+        <li class="Red"><p>&nbsp; </p></li>
+                    
+	</ul> 
+        
+        <Form>
+            
+            <fieldset class="Form_darkblue">
+                <legend>Input types</legend>
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>button</legend>
+                        <label> ein knopf den man z.b mit einer function verknüpfen kann,<br> wird über den input type "button" erstellt </label>
+                        <input type="button" name="Ein Knopf" value="Ein Knopf">
+                
+                    </fieldset>
+                    
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>checkbox</legend>
+                        <p>Checkboxen erlauben einen keine oder beliebig viele Auswahlmöglichkeiten anzukreuzen</p>
+                        <input type="checkbox" name="checkbox" value="checkbox" checked="">   <!--mit der Restriction checked wird bestimmt das die checkbox bereits beim laden der Seite gehackt ist-->
+                        <label> Auswahlmöglichkeit 1 </label>
+                        <input type="checkbox" name="checkbox2" value="checkbox2">
+                        <label> Auswahlmöglichkeit 2 </label>
+                        <input type="checkbox" name="checkbox3" value="checkbox3">
+                        <label> Auswahlmöglichkeit 3 </label>
+                    </fieldset>
+                
+                    <fieldset class="Form_darkblue" style="padding-bottom:20px;">
+                        
+                        <legend>color</legend>
+                        <label>Mit dem input type "color" öffnet der Browser bei Vorhandener Unterstützung einen Farbmixer</label><br>
+                        <label>Per click auf diesen kann man dann eine  Farbe wählen</label><br>
+                        <input type="color">
+                        
+                    </fieldset>
+                
+                <br><br><br><br><br><br><br><br><br><br>
+                    
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>date</legend>
+                        <label>Mit dem Input type "date" kann man per tastatur oder Kalendarauswahl ein Datum wählen</label>
+                        <input type="date" disabled=""> <!-- die restriction disabled , deaktiviert den jeweiligen input-->
+                        
+                    </fieldset>
+                
+                    
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>datetime-local</legend>
+                        <label>mit dem Input type "datetime-local" lässt sich auf die selbe weise wie mit dem "date" type</label><br>
+                        <label>Hier lässt sich jedoch auch eine Uhrzeit festlegen.</label>
+                        <input type="datetime-local">
+                    
+                    </fieldset>
+                        
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>email</legend>
+                        <label>für das Eingabefeld einer E-Mail wird der input type "email" verwendet</label>
+                        <input type="email">
+                    
+                    </fieldset>
+                    
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>file</legend>
+                        <label>mit dem input type file lassen sich Daten an den Server der Website übertragen</label>
+                        <input type="file">
+                    
+                    </fieldset>                        
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>hidden</legend>
+                        <label>mit dem input type hidden , lassen sich Daten erstellen ,</label><br>
+                        <label>welche von benutzer nicht gesehen oder geändert werden können </label>
+                        <label for="Vorname">Vorname:</label>
+                        <input type="text" id="Vorname" name="Vorname" maxlength="6">
+                        <input type="hidden" id="CustId" name="CustId" value="3487">
+                        <input type="submit" value="submit">
+                        
+                    </fieldset>   
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>month</legend>
+                        <label>mit dem input type "month" lässt sich Monat und ein Jahr auswählen</label>
+                        <input type="month">
+                     
+                    </fieldset>
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>number</legend>
+                        <label>mit dem Input type "number" lässt sich eine Zahl speichern</label>
+                        <input type="number" min="1" max="10">
+                        
+                    </fieldset>    
+                    
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend> passwort </legend>
+                        <label>mit dem input type password lassen sich verschlüsselt passwörter eingeben</label><br><br>
+                        <label for="username">Username:</label><br>
+                        <input type="text" id="username" name="username" required="" value="Username"><br><!-- die restriction required gibt an das dieses Feld ausgefüllt werden MUSS-->
+                        <label for="Key">Password:</label><br>                                            <!-- value gibt den standartwert des inputs an-->
+                        <input type="password" id="Key" name="Key" pattern="123456789" value="passwort"> <!--??die restriction pattern gleicht den input mit einem pattern ab??-->
+                
+                    </fieldset>  
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <label>mit dem input type range lässt sich ein Schieberegler bsp für Lautstärke erstellen</label>
+                        <input type="range" min="10" max="90">
+                        
+                    </fieldset>
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>search</legend>
+                        <label>mit dem input type search lässt sich eine google search bar erstellen</label><br><br>
+                        <label for="gsearch">Google search bar:</label><br>
+                        <input type="search" id="gsearch" name="gsearch">
+                        
+                    </fieldset>  
+                
+                    <fieldset class="Form_darkblue">
+                        
+                        <legend>url</legend>
+                        <label>mit dem input type Url lässt sich eine website eingeben und bestätigen</label><br><br>
+                        <label for="homepage">homepage:</label><br>
+                        <input type="url" id="homepage" name="homepage">
+                        
+                    </fieldset> 
+                
+                    <fieldset class="Form_darkblue">
+                    
+                    <legend>list</legend>
+
+                    
+                    <label>genre datalist</label>
+                    
+                    <input list="genres">
+                    
+                    <datalist id="genres">
+
+                        <option value="Horror">
+                        <option value="Thriller">
+                        <option value="Animation">
+                        <option value="Action">
+                        <option value="Drama">
+
+                    </datalist>
+                
+                     </fieldset> 
+                
+                </fieldset>
+                                                                                        
+        </Form>
+        
+    </body>
+</html>

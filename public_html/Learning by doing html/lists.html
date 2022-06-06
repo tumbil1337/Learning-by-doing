@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lists.html</title>
+                <link href="../Css/styles.css" rel="stylesheet" type="text/css"/>
+		<style>
+		
+
+
+			
+			#Capuchino						/*Der unterschied zwischen einer ID und einer class ist , dass die ID nur einmal verwendet werden darf*/
+			{
+				list-style-type:circle;
+			}
+			dd
+			{
+				vertical-align: super;
+				font-size:6px;
+			}
+		</style>
+	</head>
+	
+	<body style="background-color:#7cc0d8">
+		
+            <header>
+                
+		<ul class="Menueband">
+                    
+                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                    <li class="Red"><p>&nbsp; </p></li>
+                    
+		</ul>  
+                
+            </header>
+		
+		<ul style="list-style-type:circle;">
+			<li>Item</li>
+			<li>Item</li>
+			<li>Item</li>			
+		</ul>
+		
+		<ol>
+			
+			<li>
+			Coffe <ul style="list-style-type:square;">
+				 	<li id="Capuchino">Capuchino</li>
+				 	<li>Machiato</li>
+				 	<li>Black</li>
+				  </ul>
+			</li>
+			
+			<li>
+			Tea <ul style="list-tyle-type:disc;">
+					<li>Black Tea</li>
+					<li>Green Tea</li>
+					<li>Shai Tea</li>
+				</ul>
+			
+			</li>
+			
+			<li>
+			Juiyce <ul style="list-style-type:none;">
+				
+					<li>Orange</li>
+					<li>Apple</li>
+					<li>Pineapple</li>
+					
+				   </ul>
+				
+			</li>
+			
+		</ol>
+		<dl>
+  			<dt>Coffee</dt>
+  			<dd>- black hot drink</dd>
+  			<dt>Milk</dt>
+ 		    <dd>- white cold drink</dd>
+		</dl>
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		
+		<title>Style CSS.html</title>
+		<meta charset="UTF-8">
+                <link href="../Css/styles.css" type="text/css" rel="stylesheet">
+                
+		<style>
+
+		
+		.border1							/* Name der CSS class */
+		{
+			border:3px;						/* Dicke der Umrandung */
+			display:inline-block;			/* Beschränkt größe der Umrandung auf Text */
+			border-style:solid;				/* Art der Umrandung (hier:durchgezogen) */
+			border-color:red;				/* Farbe der Umrandung */
+			padding:1em;					/* Abstand der Umrandung zum Text */
+		}
+		
+		a.Button
+		
+		.Buttoon a:link, a:visited
+		{
+		
+			background-color:red;			/* Hintergrund Farbe des Links während er "normal" angezeigt wird oder bereits besucht wurde */
+			color:white;					/* Farbe des Textes */
+			padding:15px 25px;				/* Abstand des Hitergrund randes zum Text erst vertikal , dann horizontal */
+			text-align:center;				/* Text Ausrichtung */
+			text-decoration:none;			/* entfernt den Unterstrich bei dem Link */
+			display:inline-block;			/* größe des "buttons" wird an Textgröße angepasst */
+		}
+		.Button a:hover, a:active
+		{
+			background-color:black;
+
+		}
+		
+		img
+			{
+				width:10%;					/* stellt die "standart" größe von Bildern auf 10% */
+			}
+			
+		pre
+			{
+				font-family:Verdana; 		/*stellt die Schriftart von Text welche als pre ausgegeben werden auf Verdana*/
+				font-size  :12px;	 		/*stellt die Schriftgröße von Text welcher als pre ausgegeben werden auf 12px*/
+				
+			}
+		
+		 table.table2{border:1px solid red; border-collapse:collapse; text-align:left;width:150%;border-spacing:5px}
+			.table2 td{border:1px solid red;padding:15px}
+			.table2 th{border:1px solid red}
+			.table2 tr{border:1px solid red} 
+		
+		
+		</style>	
+		
+	</head>
+	
+	<body style="background-color:#7cc0d8">
+		
+		
+            <header>
+                
+		<ul class="Menueband">
+                    
+                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                    <li class="Red"><p>&nbsp; </p></li>
+                    
+		</ul>  
+                
+            </header>
+		
+		
+		<h1>Css Grundlegendes</h1>
+		
+		
+		<ul style="list-style-type:square">
+		
+			<li>Css "formt" visuelle Elemente.</li>	
+			<li>Css selbst ist kein visuelles Element.</li>
+			<li>Css Vorlagen können gespeichert und per @import im Quellcode einer seite abgerufen werden.</li>
+			
+		</ul>
+		
+		<p><b>Hier ein paar grundlegende Dinge direkt aus dem Quellcode dieser Seite</b></p>
+		
+		<pre>
+		@import "/Root Ordner/Unterordner 1/Unterordner 2/Css datei name.css";    */importiert den css Code einer css Datei um diese mittels des Klassennamens abzurufen*/
+		
+		.border1								/* Name der CSS class */
+		{
+			border:3px;						/* Dicke der Umrandung */
+			display:inline-block;					/* Beschränkt größe der Umrandung auf Text */
+			border-style:solid;					/* Art der Umrandung (hier:durchgezogen) */
+			border-color:red;					/* Farbe der Umrandung */
+			padding:1em;						/* Abstand der Umrandung zum Text */
+		}
+		
+		a.Button								/*Initialisiert die Klasse Button
+		
+		.Buttoon a:link, a:visited					/*leitet die Definition von dem Elementen a:link und a:visited innerhalb der Klasse Button ein
+		{
+		
+			background-color:red;				/* Hintergrund Farbe des Links während er "normal" angezeigt wird oder bereits besucht wurde */
+			color:white;						/* Farbe des Textes */
+			padding:15px 25px;					/* Abstand des Hitergrund randes zum Text erst vertikal , dann horizontal */
+			text-align:center;					/* Text Ausrichtung */
+			text-decoration:none;					/* entfernt den Unterstrich bei dem Link */
+			display:inline-block;					/* größe des "buttons" wird an Textgröße angepasst */
+		}
+		
+		.Button a:hover, a:active
+		{
+			background-color:black;
+
+		}
+		
+		img
+			{
+				width:10%;					/* stellt die "standart" größe von Bildern auf 10% */
+			}
+			
+		pre
+			{
+				font-family:Verdana; 				/*stellt die Schriftart von Text welche als pre ausgegeben werden auf Verdana*/
+				font-size  :12px;	 			/*stellt die Schriftgröße von Text welcher als pre ausgegeben werden auf 12px*/
+				
+			}
+		
+		 table.table2{border:1px solid red; border-collapse:collapse; text-align:left;width:150%;border-spacing:5px}
+			.table2 td{border:1px solid red;padding:15px}
+			.table2 th{border:1px solid red}
+			.table2 tr{border:1px solid red} 
+		
+		
+		</pre>
+		
+	</body>
+</html>
+
+		

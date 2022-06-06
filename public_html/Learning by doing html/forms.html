@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>Forms.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        <script src="../Javascript/scripts.js"> </script>
+        
+              <script>
+
+        </script>
+    </head>
+    
+    <body class="Body_background">
+        
+        <header>
+                 
+            <ul class="Menueband">
+                    
+                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                    <li class="Red"><p>&nbsp; </p></li>
+                    
+            </ul>  
+            
+            <script>
+
+            
+                
+            </script>
+            
+            
+        </header>
+      
+        <form action="../Formproject/forms.php">
+
+  
+          
+            <fieldset class="Form_darkblue">  <!-- Text Abfragen -->
+           
+                <legend>Personalien</legend>
+                <label style="margin-bottom: 6px;" for="Vorname">Vorname</label><br>
+                <input style="margin-top:6px; margin-bottom: 6px;" type="text" id="Vorname" name="Vorname"><br>
+                <label style="margin-bottom: 6px;" for="Nachname">Nachname</label><br>
+                <input style="margin-top:6px; margin-bottom: 6px;" type="text" id="Nachname" name="Nachname"><br>
+                
+                
+            </fieldset>
+            
+            <fieldset class="Form_darkblue">   <!-- Checkbox Abfrage für 0-x Antwortmöglichkeiten -->
+                
+                <legend>Religion</legend>
+                <p style="font-size:20px; margin-bottom:13px; margin-top:10px; "><strong>Religion:</strong></p>
+                <input type="checkbox" name="Religion" value="Christ" Id="Christ" class="Lightblue"> 
+                <label for="Christ">Christ/in</label><br>
+                <input type="checkbox" name="Religion" value="Muslim"  Id="Muslim" class="Lightblue"> 
+                <label style="margin-right:20px;" for="Muslim">Muslim/a</label>                
+                <input type="checkbox" name="Religion" value="Jude" Id="Jude" class="Lightblue"> 
+                <label for="Jude">Jüdisch</label><br>
+                 
+            </fieldset>
+            
+            <fieldset class="Form_darkblue" style="padding-top:40px; "> <!-- radio abfragen für 1-x Amtwortmöglichkeiten -->                                  
+                
+                <legend>Fortbewegung</legend>
+                <P>Wie Bewegen sie sich im Alltag fort?</p>
+                <input type="radio" id="zu_Fuß" name="Fortbewegung" value="zu Fuß">
+                <label for="zu_Fuß">Zu Fuß</label>
+                <input type="radio" id="Bus" name="Fortbewegung" value="Bus">
+                <label for="Bus">Mit dem Bus</label>
+                <input type="radio" id="Auto" name="Fortbewegung" value="Auto">
+                <label for="Auto">Mit dem Auto</label>  
+                     
+            </fieldset>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            
+ 
+            
+            <fieldset class="Form_darkblue" style="margin-top:7px"> <!--Drop down Liste mit einer oder mehreren Auswahlmöglichkeiten-->
+                
+                <legend>Film & Serien Genre</legend>
+                <label>Welche Art von Filmen gefällt ihnen am meisten</label>
+                <select style="margin-bottom: 20px" id="Film_genre" name="Film genre" size="5" multiple>
+                    <option value="Horror">Horror</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                </select><br>
+                
+                
+                <label>Welche Art von Serien gefällt ihnen am meisten&nbsp;</label>
+                <select id="Serien_genre" name="Serien genre" size="5" multiple>
+                    <option value="Horror">Horror</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Animation">Animation</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                </select>
+                
+                <p>Listen sie sonstige Genres auf die ihnen gefallen</p>
+                <textarea name="sonstige Genres" rows="7" cols="52"> </textarea>
+            </fieldset>
+            
+            <fieldset class="Form_darkblue" style="margin-top: 371px; position:relative;">
+                
+                <input type="reset" style="float:left">
+                <input type="submit" value="Senden" name="submit" style="float:left; ">
+                <button onclick="alert('Da fuq you clicking man?')" style="float:left">DONT CLICK</button>
+                
+            </fieldset>
+           
+
+                    
+            </form>
+      
+        
+    </body>
+</html>

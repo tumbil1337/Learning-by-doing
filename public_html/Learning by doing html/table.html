@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+                <title>table.html</title>
+                <link href="../Css/styles.css" rel="stylesheet" type="text/css"/>
+		
+		<style>
+		
+
+
+
+	   		
+	   table.table1{border:1px solid blue; border-collapse:collapse;text-align:left}
+			.table1 td{border:1px solid blue}
+			.table1 th{border:1px solid blue}
+			.table1 tr{border:1px solid blue}
+			.table1 tr:nth-child(even){background-color:lightgrey}									/*alle ungraden elemente von tr in .table1 werden grau makiert*/
+			.table1 tr:hover{background-color:gold}
+			
+	   table.table2{border:1px solid red; border-collapse:collapse; text-align:left;width:150%}
+			.table2 td{border:1px solid red}
+			.table2 th{border:1px solid red}
+			.table2 tr{border:1px solid red}
+			.table2 tr:nth-child(even){background-color:grey}  										/*alle ungraden elemente von tr in .table2 werden grau makiert*/
+			.table2 tr:hover{background-color:silver}
+		</style>
+	</head>
+	
+	<body style="background-color:#7cc0d8">
+		
+            <header>
+                
+		<ul class="Menueband">
+                    
+                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                    <li class="Red"><p>&nbsp; </p></li>
+                    
+		</ul>  
+                
+            </header>
+			
+		<br>
+		<br>
+		<br>
+		
+		
+		<table class="table1" style="width:95%">
+			
+		 <colgroup>										<!--leitet die columnengruppe ein-->
+		 <col span="1" style="background-color:red">    <!--definiert die 1. veränderten columnen reichweite-->
+		 <col span="2" style="background-color:green">  <!--definiert die 2. veränderten columnen reichweite , welche nach der 2. beginnt-->
+		 </colgroup>	
+ 		 <tr>				<!-- tr= table row-->
+ 		  <th>Company</th>   <!-- header cell in table = th-->
+   		  <th>Contact</th>
+  		  <th>Country</th>
+  		</tr>
+  		
+  		<tr>
+ 		  <td>Alfreds Futterkiste</td> <!--td = table data-->
+  		  <td>Maria Anders</td>
+  		  <td>Germany</td>
+ 	   </tr>
+ 	   
+ 		 <tr>
+  		  <td>Centro comercial Moctezuma</td>
+  		  <td>Francisco Chang</td>
+  		  <td>Mexico</td>
+  		</tr>
+		
+		</table>
+		<br>
+		<table class="table2">
+			
+			<tr>
+				<th>head1</th>
+				<th>head2</th>
+				<th>head3</th>
+			</tr>
+			
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>	
+			</tr>
+			
+			<tr>
+				<td>data 1.1</td>
+				<td>data 2.1</td>
+				<td>data 3.1</td>
+			</tr>
+		</table>
+		
+	
+	</body>
+</html>

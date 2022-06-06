@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <title>output.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Css/styles.css" type="text/css">
+    
+    </head>
+    
+    <body class="Body_background">
+        
+        <header>
+            
+            	<ul class="Menueband">
+                    
+                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                    <li class="Red"><p>&nbsp; </p></li>
+                    
+                </ul>
+            
+        </header>
+        
+        <div>
+            
+            <fieldset class="Form_darkblue">
+                
+                <legend>.innerHTML</legend>
+                <p>Hier steht ein Text</p>
+                <p id="Inner_html_p">hier läuft was falsch</p>
+            
+                <script>   
+                document.getElementById("Inner_html_p").innerHTML="hier steht ein anderer text";  //mit dem Bezug innerHTML lässt sich der Inhalt eines html tags ändern//
+                </script>
+             
+            </fieldset>
+            
+           
+            <fieldset class="Form_darkblue">
+                
+                <legend>.write</legend>    
+                
+                <script>
+                    document.write('durch .write eingefügte Zeile') ; //mit . write lässt sich ?Text? in ein html document schreiben//    
+                </script>
+                
+                <p id="Write_onclick"></p>
+                <button type="button" onclick="document.write('Text per write onclick eingefügt, bei nutzung von .write wird der Inhalt der Seite vollständig gelöscht!')">Click me</button> 
+                
+            </fieldset>
+            
+            <fieldset class="Form_darkblue">
+                
+                <legend>window.alert</legend>
+                
+                <p>Der Warnhinweis am Anfang wurde durch die window.alert Methode geladen</p>
+                
+                <script>window.alert ('Warn-hinweis');</script> <!-- window keyword ist optional , da variablen Eigenschaften und Methoden standartmäßig in einem Window angezeigt werden-->  -->
+                
+            </fieldset>
+            
+            <fieldset class="Form_darkblue">
+                
+                <legend>console.log</legend>
+                
+                <p>Der inhalt von der Methode console.log wird in der Konsole des Debug Moduses angezeigt</p>
+                
+                <script> console.log('Console.log Daten');</script>
+                
+            </fieldset>
+            
+            <br><br><br><br><br><br><br><br><br><br>
+            
+            <fieldset class="Form_darkblue" style="float:left;">
+                
+                <legend>window.print()</legend>
+                
+                <p>Per window.print wird Ein Fenster zum Drucken der aktuellen Seite bei onclick geöffnet</p>
+                
+                <button onclick="window.print()">Print this Page!</button>
+                
+            </fieldset>
+            
+        </div>
+    
+       
+    
+    </body>
+
+</html>

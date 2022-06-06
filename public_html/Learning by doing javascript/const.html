@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!-- Konstanten werden genutzt für:
+      -Arrays
+      -Objects
+      -Functions
+      -RegExp
+     const steht nicht für einen konstanten Wert , sondern für eine Konstante zuweisung zu einem Wert
+-->
+
+<html>
+    <head>
+        
+        <title>const.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.5">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        
+        <script>
+            
+         const Pi=3.14159; //einer Konstanten MUSS immer ein festgelegter Wert zugewiesen werden
+            
+         //const Pi=3.14     //eine neuzuweisung eines anderen Wertes zur selben Konstante ist nicht Möglich
+            
+         //const Pi;         //eine Konstante muss sofort einem Wert zugewiesen werden (in der selben Zeile)
+         //Pi =3.14159;     
+        </script>
+        
+    </head>
+    
+    <body class="Body_background">
+       
+        <header>
+                
+            <ul class="Menueband">
+                
+                <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                <li class="Red"><p>&nbsp; </p></li>
+                    
+            </ul>  
+                
+        </header>
+        
+        
+        <p id="Pi">hier müsste Pi stehen</p>
+        <p id="Array">hier müsste das Array "Farben" stehen</p><br>
+        <p id="Car">hier müsste mein Auto stehen</p>
+        
+        <script>
+        document.getElementById("Pi").innerHTML=Pi;    
+        
+        
+        //const Array
+        const Farben = ["rot","blau","grün","schwarz"]; // hier wird das const Array Farben erstellt
+        Farben[0]="dunkel-rot";                         // hier wird der 1. Wert des Arrays geändert
+        Farben.push("weiß");                            // hier wird dem const Array Farben ein Wert hinzugefügt
+        //const Farben = ["rot", "blau", "grün","weiß"]; 
+        //Farben = {"dunkel-rot", "blau", "grün", "weiß"];  //Dem Array Farben , kann kein geänderter oder neuer Wert hinzugefügt werden.
+        document.getElementById("Array").innerHTML=Farben;
+        
+       //const Object
+       const Car = {type:"Corvette" , Model:"Stingray" , Farbe:"Schwarz"}; 
+       Car.Farbe="Matt-grau";
+       Car.Besitzer="Sascha";
+       document.getElementById("Car").innerHTML="| Car type: "+Car.type+" | Car-Model: "+Car.Model+" | Car color: "+Car.Farbe+" | Car owner: "+Car.Besitzer;
+       
+       
+        
+        </script>
+        
+           
+    </body>
+</html>

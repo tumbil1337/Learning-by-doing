@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Übung.html</title>
+    <meta charset="utf-8">
+    <link href="header.html" rel="import">
+    <link href="../Css/styles.css" rel="stylesheet">
+    <link href="Site elements/header.html" rel="import">
+    <script src="../Javascript/scripts.js"></script>
+    
+    <script>
+    function Funktioniert()
+    {
+    document.getElementById("p2").innerHTML="durch funktion geänderter Text";
+    }
+    </script>
+</head>
+<body>
+
+    
+    <p id="p1">Ungeänderter Text</p>
+    <script>
+    document.getElementById("p1").innerHTML="geänderter Text";
+    </script>
+    
+    <p id="p2">Ungeänderter Text</p>
+    <button onclick= "Funktioniert()"> ändern des 2. textes</button>
+    
+    <p id="Externe_funktion_p">Ungeänderter Text</p>
+    <button onclick="grundlegendes_extern()">ändern des 3. textes </button>
+   
+
+
+
+</body>
+</html>

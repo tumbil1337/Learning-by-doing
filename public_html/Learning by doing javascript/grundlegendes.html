@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>java-script</title>
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        <script src="../Javascript/scripts.js"></script>
+		
+        <script>
+            function funktionierende_funktion ()
+            {
+                document.getElementById("Funktions_p").innerHTML="Änderung via Funktion";
+            }
+        </script>
+        
+        <style>
+	#demo
+	{
+	border:1px red solid;
+	display:inline-block;
+	}
+	</style>
+        
+    </head>
+	
+	<body class="Body_background">
+            
+             <header>
+                
+		<ul class="Menueband">
+                    
+                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
+                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
+                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
+                    <li class="Red"><p>&nbsp; </p></li>
+                    
+		</ul>  
+                
+            </header>
+		
+            <p id="Demo">hey</p>
+		
+            <script>																	//die Reinfolge, in welcher der Code geschrieben wird, spielt im gegensatz zu HTML und CSS eine Rolle//
+            document.getElementById("Demo").innerHTML = "hier sollte stat 'hey' das hier stehen";			//wenn Der script vor dem paragraph stehen würde , würde er diesen noch nicht kennen , da das Die Website schrittweise gelesen wird.//
+            </script>																	<!--hier ändert Java Script das vorherige paragraph von "hey", zu "hello Javascript!"-->
+            <noscript>Kein Javascript verfügbar</noscript>
+            
+            <img id="Dolan" src="../Images/Dolan.jpg" title="aus Dolan wird Dolan" alt="keine diese">
+		
+            <script>
+            document.getElementById("Dolan").src="../Images/dolan-wow.png";				//hier ändert Java-script das vorrangegangene Bild von Dolan zu Unbenannt//
+            </script>
+            <noscript>Kein Javascript verfügbar</noscript>															
+            
+            <p id="Funktions_p">nicht durch funktion geändert</p><br>
+            <button onclick="funktionierende_funktion ()">Java script abrufen</button>
+            <noscript>Kein Javascript verfügbar</noscript>
+            
+            <p id="Externe_funktion_p">nicht von externer Funktion geändert</p>
+            <button onclick="grundlegendes_extern()">Externen script abrufen</button>
+            <noscript></noscript>
+            
+		
+	</body>
+</html>

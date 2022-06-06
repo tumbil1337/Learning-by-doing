@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+
+<html>
+    <head>
+        <title>syntax.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        
+    </head>
+    
+    <body class="Body_background">
+        
+        <script>
+             
+          //const retard;       Deklaration der Konstanten retard//
+          //retard=5;//
+            var x;              //Deklaration von x//
+            let y;              //Deklaration von y//
+            //let und const gibt es erst seit 2015 also laufen websiten auf alten browsern nur wenn man var benutzt//
+            //WICHTIG!!! im gegensatz zu var sind variablen die mit let deklariert wurden  nicht neu deklarierbar//
+            //retard="retarded" //Initialisierung von retard//
+            x=5;                //Initialisierung von x//
+            y=6;                //Initialisierung von y//
+            
+            let z = x + y;      // Deklaration & Initialisierung von z//
+    
+        </script>
+        
+        <fieldset>
+        <legend id="Retard"></legend>
+        
+        <p> Groß-buchstaben stehen für einen script der nicht funktioniert oder abgebrochen wurde </p>
+        <p> Die numerische Zahl für den jeweiligen Buchstaben des Alphabetes,<br>oder "???" steht für einen funktionierenden script </p>
+        <p> Ein Buchstabe in Grün steht für einen Javascript der zu veranschauungs zwecken NICHT funktionieren soll
+        <p id="Test1">A</p>
+        <p id="Test2">B</p>
+        <p id="Test3">C</p>
+        <p id="Test4">D</p>
+        <p id="Test5">E</p>
+        <p id="Test6" style="color:lightgreen; font-weight:bold; ">F</p>
+        <p id="Test7" style="color:lightgreen; font-weight:bold; ">G</p>
+        <p id="Test8" style="color:lightgreen; font-weight:bold; ">H</p>
+        <p id="Test9">I</p>
+        <p id="Test10">J</p>
+        
+        <p id="var_C">K</p>
+        <p id="var_C_new">L</p>
+        
+        <script>
+
+                                 
+
+
+            var A;
+            A=1;
+
+            let B;
+            B=2;
+            
+            {
+            var C = 3;         // variablen die mit var deklariert sind können auch ausserhalb der bock-scopes abgerufen oder geändert werden
+            }                  // Zudem können sie im laufe des Codes einen neuen Wert zugewiesen bekommen , wie in Zeile : 96
+                                         
+            let D=4;       
+            
+            {                   //dar die variable v mit let deklariert ist , kann ist diese ausserhalb von 
+            let F=5;            //den block-scopes unbekannt , der Code crasht am ende von Zeile 70
+            }                   //dar es die verlangte variable nicht finden kann.
+                                //let darf innerhalb eines blocks nicht mehrfach deklariert werden
+            
+            let G=6; 
+            
+            let E=7;         //varbuablen sind auch ausserhalb des <script> tags abrufbar in welchem sie Initialisiert wurden.   x001
+            
+            
+        document.getElementById("Test1").innerHTML= A;
+        document.getElementById("Test2").innerHTML= B;
+        document.getElementById("Test3").innerHTML= C;      
+        document.getElementById('Test4').innerHTML= D;
+        document.getElementById('Test5').innerHTML= E;      //ab hier würde der code crashen , wenn zuerst v abgefragt wird , dann b
+                                                            //dar der code jedoch erst hier crasht , kann b auch wen es nach v initialisiert wurde
+                                                            //abgefragt werden
+        document.getElementById('Test6').innerHTML= F;      //hier crasht der Code
+        document.getElementById('Test7').innerHTML= G;      //alle weiteren abfragen innerhalb dieses <script> tags funktionieren nicht
+        document.getElementById("Test8").innerHTML="???";
+        </script> 
+        
+        <script>
+            
+        document.getElementById("Test9").innerHTML="???";   //Ausserhalb des vorangegangenen <script> tags funktionieren Abfragen wieder
+        document.getElementById("Test10").innerHTML= E;     //x001 E wurde in einem anderen <script> tag initialisiert.
+        document.getElementById("var_C").innerHTML=C+" Variable C";
+        
+        C=30;                                               //Reinitialisierung von var C
+        document.getElementById("var_C_new").innerHTML=C +" Variable C nach der Reinitialisierung";
+        
+        
+        </script>
+        
+        </fieldset>
+        
+        
+
+
+        
+        
+    </body>
+</html>
