@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        <script src="../Javascript/Components/header.js" defer></script>
+        
+        <script> 
+            
+            function Multiplikation (p1, p2)        // eine Funktion ist ein wiederabrufbarer Code  p1 und p2 sind hier die un initialisierten variablen platzhalter
+            {
+                return p1*p2;                       // Die funktion soll 2 zahlen welche man im Quellcode eingeben kann multiplizieren
+            }                                       // p1 und p2 verhalten sich immerhalb der function , wie locale variablen
+                                                    // wenn die Funktion an einem return ankommt , wird am ende der zeile diese beendet und zum code "zurück gekehrt"
+        </script>
+        
+    </head>
+    
+    <body class="Body_style">
+
+        <header-component></header-component>
+        
+        <p id="Produkt"></p>
+        
+        <script>
+            
+            document.getElementById("Produkt").innerHTML=Multiplikation(10, 10); //in den klammern werden die Zahlen eingegeben , die de
+            
+        </script>
+        
+        <p id="Person"></p>
+        <p id="Person2"></p>
+        
+        <script>
+            
+            const Person = {                //const können wenn sie Objects sind über mehrere Zeilen Initialisiert werden
+                
+                Fullname:function(){         //Ausserdem können bei der Initialisierung functionen bspw zum zusammenfügen von 2 Eigenschaften genutzt werden.
+                return Person.Firstname + " " + Person.Lastname;},      //this bezieht sich immer 
+                Firstname: "Sascha",
+                Lastname: "Fischer",
+                Age:26,
+                Eye_color: "brown"
+
+               };
+                
+                document.getElementById("Person").innerHTML="Fullname: "+Person.Fullname()+"<br>Firstname: "+Person.Firstname+"<br>Lastname: "+Person.Lastname+"<br>Age: "+Person.Age+"<br>eye-color: "+Person.Eye_color;
+            
+        </script>
+        
+    </body>
+    
+</html>

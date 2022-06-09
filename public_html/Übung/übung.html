@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Übung.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        <script src="übung.js" type="text/javascript" defer></script>
+        
+        <script>
+            
+         var i=0;
+         var audio = new Audio('../Audio/trollmusic.mp3');
+         
+         function trollmusic(){
+            audio.play();
+            };
+         
+         function trollmusicpause(){
+             audio.pause();
+         };
+        
+
+
+            
+        </script>           
+        
+    </head>
+    
+    
+    <body class="Body_style" onkeydown="trollmusic()" onkeyup="trollmusicpause()">
+    <header-component></header-component>
+    
+    <button>Troll test</button>
+    <input type="text" id="text" name="text" >
+
+    
+    
+    </body>
+</html>

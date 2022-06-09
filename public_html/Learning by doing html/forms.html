@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html style="height:100%;">
     <head>
         
         <title>Forms.html</title>
@@ -8,39 +8,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="../Css/styles.css" rel="stylesheet" type="text/css">
         <script src="../Javascript/scripts.js"> </script>
+        <script src="../Javascript/Components/header.js" defer></script>
         
-              <script>
-
-        </script>
     </head>
     
-    <body class="Body_background">
+    <body class="Body_style">
         
-        <header>
-                 
-            <ul class="Menueband">
-                    
-                    <li><a href="/Learning by doing html/html inhaltsverzeichniss.html">HTML</a></li>
-                    <li><a href="/Learning by doing css/css inhaltsverzeichniss.html">CSS</a></li>
-                    <li><a href="/Learning by doing javascript/javascript inhaltsverzeichniss.html">Javascript</a></li>  
-                    <li class="Red"><p>&nbsp; </p></li>
-                    
-            </ul>  
-            
-            <script>
-
-            
-                
-            </script>
-            
-            
-        </header>
+        <header-component></header-component>
       
         <form action="../Formproject/forms.php">
 
   
           
-            <fieldset class="Form_darkblue">  <!-- Text Abfragen -->
+            <fieldset class="Theme_darkblue">  <!-- Text Abfragen -->
            
                 <legend>Personalien</legend>
                 <label style="margin-bottom: 6px;" for="Vorname">Vorname</label><br>
@@ -51,7 +31,7 @@
                 
             </fieldset>
             
-            <fieldset class="Form_darkblue">   <!-- Checkbox Abfrage für 0-x Antwortmöglichkeiten -->
+            <fieldset class="Theme_darkblue">   <!-- Checkbox Abfrage für 0-x Antwortmöglichkeiten -->
                 
                 <legend>Religion</legend>
                 <p style="font-size:20px; margin-bottom:13px; margin-top:10px; "><strong>Religion:</strong></p>
@@ -64,7 +44,7 @@
                  
             </fieldset>
             
-            <fieldset class="Form_darkblue" style="padding-top:40px; "> <!-- radio abfragen für 1-x Amtwortmöglichkeiten -->                                  
+            <fieldset class="Theme_darkblue" style="padding-top:40px; "> <!-- radio abfragen für 1-x Amtwortmöglichkeiten -->                                  
                 
                 <legend>Fortbewegung</legend>
                 <P>Wie Bewegen sie sich im Alltag fort?</p>
@@ -80,7 +60,7 @@
             
  
             
-            <fieldset class="Form_darkblue" style="margin-top:7px"> <!--Drop down Liste mit einer oder mehreren Auswahlmöglichkeiten-->
+            <fieldset class="Theme_darkblue" style="margin-top:7px"> <!--Drop down Liste mit einer oder mehreren Auswahlmöglichkeiten-->
                 
                 <legend>Film & Serien Genre</legend>
                 <label>Welche Art von Filmen gefällt ihnen am meisten</label>
@@ -106,7 +86,7 @@
                 <textarea name="sonstige Genres" rows="7" cols="52"> </textarea>
             </fieldset>
             
-            <fieldset class="Form_darkblue" style="margin-top: 371px; position:relative;">
+            <fieldset class="Theme_darkblue" style="margin-top: 371px; position:relative;">
                 
                 <input type="reset" style="float:left">
                 <input type="submit" value="Senden" name="submit" style="float:left; ">

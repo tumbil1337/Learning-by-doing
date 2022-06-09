@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<!-- Link im Inhaltsverzeichniss erstellen! -->
+<html>
+    <head>
+        <title>Elements</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        <script src="../Javascript/Components/header.js" type="text/javascript" defer></script>
+        <script src="../Javascript/trollmusic.js" type="text/javascript" defer></script>
+        
+        <script>
+            
+            function confirm_leave(){
+                return 'Nein man, du willst noch nicht gehn';
+            }
+            
+        </script>
+
+        <script>
+        function alert_onload()
+        {
+            alert("fieldset .onload wurde geladen");
+        }
+        </script>        
+        
+    </head>
+    <body class="Body_style" onbeforeunload="return confirm_leave()">
+    <header-component></header-component>
+    
+        <div class="Theme_darkblue" onerror=".play()">
+            
+            <fieldset style="border:none; ">
+            
+                <h1>Events</h1>
+
+                
+                    
+                    <fieldset onload="alert_onload()">
+                    <legend>.onload</legend>
+                    <p>Dieses fieldset sollte wenn es geladen wurde , einen alert aktivieren</p>
+
+                    </fieldset>
+
+                    
+                   
+                    
+                <fieldset>
+                    
+                    <legend>.onclick</legend>
+                    
+                    <p id="Onclick_p">Die magische Miesmuschel</p>
+                    
+                    <script>
+                        
+                        var i_button=1;
+                        
+                        function onclick_button(){              // diese Funktion wechselt zwischen 2 Möglichen Textinhalten des paragraphen.
+                            i_button=i_button+1;
+                          
+                            
+                            if (i_button % 2 === 0) {
+                                document.getElementById('Onclick_p').innerHTML='Frag doch einfach nochmal!';
+                            }
+                            else {
+                                document.getElementById('Onclick_p').innerHTML='Nein!';
+                            }
+                        }
+                        
+                    </script>
+                    
+                    <button onclick="onclick_button()">Darf ich was essen?</button>      <!--dies passiert immer dann , wen auf einen Button geklickt wird-->
+
+                </fieldset>    
+
+                <fieldset>
+
+                    <legend>.onchange</legend>
+                    
+                    <br>
+                    <label id="onchange_label">Text ändert sich, wenn sich das Eingabefeld durch das Drücken von Enter ändert.</label><br><br>
+                    <input id="onchange_input" type="text" name="onchange_input">
+
+                    <script>                   
+                    
+                    
+                    document.getElementById('onchange_input').addEventListener('onchange',copy_onchange);
+                    
+                    function copy_onchange()
+                    {
+                    var input_onchange= document.getElementById('onchange_input').value;        //diese speichert den value des eingabefeldes in einer variable
+                    document.getElementById('onchange_label').innerHTML=(input_onchange);       //und gibt sie anschließend im Paragraphen aus.
+                    }
+                    
+                    </script>    
+                    <br>
+
+ 
+                </fieldset>    
+             
+                <fieldset>
+                    
+                    <legend>.onkeyup/.onfocusin/.onfocusout</legend>
+                    
+                    <label id="onkeyup_label">
+                        Text ändert sich mit jedem Buchstaben<br>
+                        Beim anklicken des Inputfeldes (.infocus) wird dieser Text gelöscht<br>
+                        Beim anklicken eines anderen elements(.focusout) wird der geschriebene Text gelöscht <br>
+                    </label>
+                    <input type="text" id="onkeyup_input" name="onkeyup_input"><br>
+                    <script>
+                   
+                    document.getElementById('onkeyup_input').addEventListener('focusin',clear_onfocusin);
+                    
+                    function clear_onfocusin()
+                    {
+                        document.getElementById('onkeyup_label').innerHTML='';
+                    }
+                    
+                    
+                    document.getElementById('onkeyup_input').addEventListener("keyup",copy_onkeyup);
+    
+                    function copy_onkeyup()
+                    {
+                        var input_onkeyup = document.getElementById('onkeyup_input').value;
+                        document.getElementById('onkeyup_label').innerHTML =(input_onkeyup);
+                    };
+                    
+                    document.getElementById('onkeyup_input').addEventListener('focusout',reset_onfocusout);
+                    function reset_onfocusout()
+                    {
+                        document.getElementById('onkeyup_label').innerHTML ='Text ändert sich mit jedem Buchstaben';
+                        document.getElementById('onkeyup_input').value ='';
+                    };
+                    
+                    </script>
+                    ^
+                </fieldset>
+                
+
+                
+                <input type="reset" value="Reset">
+            </fieldset>
+            
+        </div>
+    
+    </body>
+</html>

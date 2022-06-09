@@ -1,12 +1,18 @@
-.Body_background
+.html_window
+{
+    height:100%;
+}
+
+.Body_style
 {
     background-color:#284F88;
-    color:white;
+    min-height:100%;
 }
 
 .Darkblue
 {
-    background-color:#063970; color:white
+    background-color:#063970; 
+    color:white;
 }
 
 .Lightblue
@@ -15,89 +21,126 @@
 }
 
 
-
 .Menueband
 {          
 background-color:#063970;
 list-style-type:none;
-padding:0;
-margin:0;
-margin-bottom:15px;
+padding-left: 0px;
 overflow:hidden;
     }
 			
     .Menueband li
     {
-    float:left;                      
+    float:left;  
+    padding:0px;
     }
         
 	.Menueband li a
         {
         display:block;
         text-align:center;
-        text-decoration:none;
-        font-size:24px;
+        text-decoration:underline;
+        font-size:28px;
+        font-style:oblique;
         color:white;
-        padding:32px;
+        padding:56px;
+        
         }
 			
         .Menueband li a:hover
         {
         background-color:#154c79;
         }
+        
+        .Menueband li a:visited
+        {
+        color:white;
+        }
             
     .Menueband .Red
     {
     background-color:darkred;
     float:right;
+
     }
-            
-        .Menueband .Red p
+    
+        ul.Menueband li.Red a.Welcome
         {
         display:block;
+        padding-top: 50px;
+        padding-bottom:50px;
+        padding-right:100px;
+        padding-left:100px;
+        font-size:38px;
+        font-style:oblique;
         text-align:center;
-        color:darkred;
-        padding:22px;
-        padding-left:300px;
+        color:white;  
+        }
+        
+        ul.Menueband li.Red a.Welcome:hover
+        {
+        background-color:red;
         } 
-            
-.Inhaltsverzeichniss{background-color:darkred; }
-        
-        .Inhaltsverzeichniss li{color:white;}
-        
-            .Inhaltsverzeichniss li:nth-child(odd){background-color:#063970}
-            .Inhaltsverzeichniss li:nth-child(even){background-color:#154c79;}
-            
-            .Inhaltsverzeichniss li a{text-decoration:none;}
-            .Inhaltsverzeichniss li a:visited{text-decoration:none; color:darkblue;}
-        
 
-                        
-
-                      
-                   
-.Iframe_inhaltsverzeichniss
-{
-    overflow:hidden;
-    float:left;
-    display:inline-block;
-    border:2px solid #063970;
-    width:75%;
-    height:2000px;
-    padding:0px;
-    margin-left:50px;
-} 
-                        
-   .Iframe_inhaltsverzeichniss iframe
-        {   
-            width:100%;
-            height:100%;
+    .Inhaltsverzeichniss_main
+    {   
+        min-height:100%;
+    }
+    
+        .Inhaltsverzeichniss_nav
+        { 
             display:block;
-            border:none;
+            float:left;
+            margin-right:100px;
         }
 
+            .Headline_nav
+            {
+                font-style:oblique;
+                font-size:40px;
+                color:white;
+            }
 
-.Form_darkblue
+                #Inhaltsverzeichniss_ol
+                {
+                    background-color:darkred; 
+                }
+
+                        #Inhaltsverzeichniss_ol li
+                        {
+                            color:white;
+                            font-size:24px;
+                        }
+
+                            #Inhaltsverzeichniss_ol li:nth-child(odd){background-color:#063970}
+                            #Inhaltsverzeichniss_ol li:nth-child(even){background-color:#154c79;}
+
+                            #Inhaltsverzeichniss_ol li .Inhalt_a{text-decoration:none; color:lightskyblue;}
+                            #Inhaltsverzeichniss_ol li .Inhalt_a:visited{text-decoration:none; color:darkblue;}
+            
+
+        .Content_iframe
+        {
+           min-height: 100%; 
+        }
+        
+            #Headline_iframe
+                {
+                    font-weight:bold;
+                    font-style:oblique;
+                    font-size:30px;
+                    color:white;
+                } 
+                
+            #Iframe
+                {
+                    min-height: 100%;
+                }
+
+
+
+
+.Theme_darkblue 
 {
     display:inline-block;
     background-color:#063970;
@@ -108,69 +151,76 @@ overflow:hidden;
     float:left;  
     margin:25px;
 }
-    .Form_darkblue legend
+    .Theme_darkblue legend
     {
         border:2px solid lightslategray;
         text-decoration: underline;
         font-style: oblique ;
         font-weight: bold;
+        font-size:24px;
             
     }
     
-    .Form darkblue fieldset
+    .Theme_darkblue fieldset
     {
+        display:inline-block;
+        float:left;
         border:2px solid lightslategray;
+        margin-bottom:20px;
+        margin-right:40px;
     }
-    .Form_darkblue label
+    .Theme_darkblue label
     {
         vertical-align: top;
         
     }
     
-    .Form_darkblue input[type=checkbox]
+    .Theme_darkblue input[type=checkbox]
     {
         width: 20px;
         height: 20px;
     }
     
-    .Form_darkblue input[type="text"] 
+    .Theme_darkblue input[type="text"] 
+    {
+        display:inline-block;
+        background-color:#154c79;
+        border:1px solid darkgrey;
+        color:white;
+        
+    }
+    
+    .Theme_darkblue input[type="email"] 
     {
         background-color:#154c79;
         border:1px solid darkgrey;
         color:white;
     }
     
-    .Form_darkblue input[type="email"] 
-    {
-        background-color:#154c79;
-        border:1px solid darkgrey;
-        color:white;
-    }
-    
-    .Form_darkblue input[type="password"] 
+    .Theme_darkblue input[type="password"] 
     {
         background-color:#154c79;
         border:1px solid darkgrey;
         color:white;
     }    
     
-    .Form_darkblue input [value="Password"]
+    .Theme_darkblue input [value="Password"]
     {
     font-style:oblique;
     }
     
-    .Form_darkblue input [value="Username"]
+    .Theme_darkblue input [value="Username"]
     {
     font-style:oblique;
     }
     
-    .Form_darkblue input[type=radio]
+    .Theme_darkblue input[type=radio]
     {
         display:inline-block;
         width:auto;
     }
     
-    .Form_darkblue select
+    .Theme_darkblue select
     {
        
         background-color:#154c79;

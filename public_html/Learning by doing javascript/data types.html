@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>data types.html</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../Css/styles.css" rel="stylesheet" type="text/css">
+        <script src="../Javascript/Components/header.js" defer></script>
+    </head>
+    
+    <body class="Body_style">
+        
+        <header-component></header-component>
+        
+        <p id="Number"></p>
+        <p id="String"></p>
+        <p id="Boolean"></p>
+        <p id="Object"></p>
+        <p id="Array"></p>
+        
+        
+        <script>
+            
+            //Es gibt verschiedene Datentypen
+            
+            //number: eine Zahl
+            
+            var a=60;
+            let b=9;
+            let c=a+b;
+            
+            document.getElementById("Number").innerHTML="a = "+a+"<br>b = "+b+"<br>a + b = c = "+c; 
+            
+            //string
+            
+            var d="I´m";
+            let e="a";
+            let f="retard";
+            
+            document.getElementById("String").innerHTML=d +" "+e+" "+f;          
+            
+            //Boolean
+            
+            var g= 10;
+            var h= 11;
+            var i=g+h;
+            var j= h-g;
+            
+            document.getElementById("Boolean").innerHTML =(g+h === i)+" <br> "+(j===i);
+            
+            //object
+            
+            var k = {Großbuchstabe:"K", Kleinbuchstabe:"k"};
+            
+            document.getElementById("Object").innerHTML="Großbuchstabe: "+k.Großbuchstabe+"<br>Kleinbuchstabe: "+k.Kleinbuchstabe;
+            
+            //Array
+            
+            var l = "geändert";
+            var m = "neu";
+            var n = [a,b,c,d,e,f,g,h,i,j,k.Großbuchstabe, k.Kleinbuchstabe];
+            
+            n[0]=l;
+            n.push(m);
+            
+            document.getElementById("Array").innerHTML=n;
+        
+        </script>
+        
+    </body>
+    
+</html>
